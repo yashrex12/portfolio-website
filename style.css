@@ -50,7 +50,7 @@ a{
 }
 
 a:hover {
-    color: blue;
+    color: orange;
     text-decoration: none;
 }
 
@@ -155,6 +155,20 @@ section{
 .section-container {
     display: flex;
 }
+.section__pic-container{
+    width: 100%;
+    height: 75vh;
+    width: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile-img{
+    display: flex;
+    height: 75vh;
+    width: 100vh;
+    border-radius: 50%;
+}
 
 /* PROFILE */
 
@@ -174,32 +188,47 @@ section{
 
 .section__text {
     align-self: center;
-    text-align: center;
+    text-align: left;
+    margin-right: 10rem;
 }
 
 .section__text p{
     font-weight: 500;
+    text-align: left;
 }
 
 .section__text__p1{
     text-align: center;
 }
-.section__text__p2{
-    font-size: 1.5rem;
-    margin-bottom: 50px;
+.section__text__home{
+    text-align: left;
 }
-
-
+.section__text__p1-exp{
+    text-align: center;
+}
+.profile-img{
+    height: 400px;
+    width: 400px;
+    display: flex;
+}
 .title{
+    font-size: 2rem;
+    text-align: center;
+}
+.title-home{
+    font-size: 2rem;
+    text-align: left;
+}
+.title-exp{
     font-size: 2.5rem;
     text-align: center;
 }
 
-#socials-container {
+#social-container {
     display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    gap: 2rem;
+    justify-content: left;
+    margin-top: 1.5rem;
+    gap: 5rem;
 }
 
 /* ICONS */
@@ -207,6 +236,8 @@ section{
 .icon{
     cursor: pointer;
     height: 2rem;
+    gap: 3rem;
+
 }
 
 
@@ -216,6 +247,8 @@ section{
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .btn {
@@ -224,43 +257,46 @@ section{
     padding: 0.5rem;
     width: 8rem;
     border-radius: 2rem;
+    margin-right: 2rem;
 }
 
 .btn-color-1, .btn-color-2 {
-    border: rgb(53, 53, 53) 0.1rem solid;
+    border: orange 0.1rem solid;
 }
 .btn-color-1:hover, 
 .btn-color-2:hover {
     cursor: pointer;
 }
-.btn-color-1, 
 .btn-color-2:hover {
-    background: rgb(53, 53, 53);
+    background: orange;
     color: white;
 }
-
-.btn-color-1:hover{
-    background: rgb(0, 0, 0);
+.btn-color-1{
+    background: orange;
+    color: white;
 }
 
 .btn-color-2{
     background: none;
+    color: orange;
 }
 
 .btn-color-2:hover{
     border: rgb(255,255, 255) 0.1rem solid;
 }
 
-.btn-container{
+.btn-container-home{
     margin-top: 1rem;
-    gap: 1rem;
+    gap: 10rem;
     margin-bottom: 1rem;
+    justify-content: left;
 }
 
 /* ABOUT */
 
 #about{
     position: relative;
+    margin-top: 5rem;
 }
 
 .about-container{
@@ -273,7 +309,7 @@ section{
 }
 
 .about-details-container{
-    justify-content: center;
+    justify-content: left;
     flex-direction: column;
 }
 
@@ -282,13 +318,19 @@ section{
 }
 
 .about-pic {
-    border-radius: 2rem;
+    border-radius: 50%;
+    height: 275px;
+    width: 275px;
+
+}
+.text-container{
+    margin-top: -1.5rem;
 }
 
 .arrow {
     position: absolute;
     right: -5rem;
-    bottom: 2.5rem;
+    bottom: 15rem;
 }
 
 .details-container{
@@ -296,9 +338,18 @@ section{
     flex: 1;
     background: white;
     border-radius: 2rem;
-    border: rgb(53, 53, 53);
-    border-color: rgb(163, 163, 163);
-    text-align: center;
+    text-align: left;
+}
+.details-container-edu{
+    
+    padding-bottom: 1rem;
+    flex: 1;
+    background: white;
+    border-radius: 2rem;
+    text-align: left;
+}
+.details-container-edu h3{
+    color: orange
 }
 
 .section-container {
@@ -306,26 +357,30 @@ section{
     height: 80%;
 }
 
-.section__pic-container{
-    height: 400px;
-    width: 400px;
-    margin: auto;
+.about__pic-container{
+    align-items: center;
+    padding-top: 2.5rem;
+}
+.skills{
+    text-align: left;
 }
 
 /* EXPERIENCE */
 
 #experience{
+    margin-top: -5rem;
     position: relative;
 }
 
 .experience-sub-title{
-    color: rgb(85, 85, 85);
+    color: orange;
     font-weight: 600;
     font-size: 1.5rem;
+    text-align: left;
 }
 
 .experience-sub-title-ui{
-    color: rgb(85, 85, 85);
+    color: orange;
     font-weight: 600;
     font-size: 1.5rem;
     margin-bottom: 4.2rem;
@@ -333,6 +388,7 @@ section{
 }
 
 .experience-details-container{
+    margin-top: -1rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -343,15 +399,22 @@ section{
     text-align: initial;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 1rem;
-    margin-top: 2rem;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+.article-container-img{
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1.5rem;
+    margin-top: 1rem;
 }
 
 article{
     display: flex;
     width: 10rem;
-    justify-content: space-around;
-    gap: 0.5rem;
+    gap: 1rem;
 }
 
 .article-icon{
@@ -362,28 +425,40 @@ article{
 
 #projects{
     position: relative;
-    margin-top: 10rem;
+    margin-top: 15rem;
 }
 
-.color-container{
-    border-color: rgb(163,163,163);
-    background: rgb(250, 250, 250);
-}
 
 .project-img{
-    border-radius: 2rem;
-    width: 90%;
-    height: 90%;
+    margin-top: -1.3rem;
+    margin-left: 0.4rem;
+    width: 300px;
+    height: 400px;
+    justify-content: center;
+    border-radius: 1rem;
 }
 
 .project-title{
     margin: 1rem;
     color: black;
+    justify-content: center;
 }
-
-.project-btn{
+.project-sub-title{
     color: black;
-    border-color: rgb(163,163,163);
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+.project-btn{
+    color: orange;
+    border-color: orange;
+}
+.project-btn-container{
+    padding-bottom: -2rem;
+    display: flex;
+    justify-content: center;
+    
 }
 
 /* CONTACTS */
@@ -393,17 +468,15 @@ article{
     justify-content: center;
     flex-direction: column;
     height: 70vh;
+    margin-top: 5rem;
 }
 
 .contact-info-upper-container{
     display: flex;
     justify-content: center;
-    border-radius: 2rem;
-    border: rgb(53, 53, 53) 0.1rem solid;
-    border-color: rgb(163, 163, 163);
-    background: rgb(250, 250, 250);
     margin: 2rem auto;
     padding: 0.5rem;
+    gap: 5rem;
 
 }
 

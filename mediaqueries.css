@@ -54,6 +54,17 @@
         height: 83vh;
         margin-bottom: 0;
     }
+    #about{
+        margin-top: 5rem;
+    }
+    #projects{
+        margin-top: -1rem;
+    }
+    .profile-img{
+        height: 200px;
+        width: 200px;
+        display: flex;
+    }
     article{
         font-size: 1rem;
     }
@@ -65,7 +76,7 @@
         flex-wrap: wrap;
     }
     .contact-info-container{
-        margin: 0;
+        margin-bottom: -3rem;
     }
     .contact-info-container p, .nav-links li a{
         font-size: 0.8rem;
@@ -81,6 +92,9 @@
         gap: 0.1rem;
         text-align: center;
     }
+    .nav-links-container{
+        margin-top: 3rem;
+    }
     .section__pic-container{
         width: auto;
         height: 46vw;
@@ -89,11 +103,15 @@
     .section__text__p2 {
         font-size: 1.25rem;
     }
+
     .title{
         font-size: 1.8rem;
     }
     .text-container{
-        text-align: justify;
-        
+        text-align: justify;   
     }
+    .btn-container-home, .btn{
+        gap: 5rem;
+    }
+    
 }
